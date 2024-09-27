@@ -155,7 +155,7 @@ const page = () => {
 
         {/* Print Button */}
         <div>
-          <button className="flex items-center justify-between gap-6 px-2 py-2 text-white bg-[#152765] rounded w-32 sm:w-auto hover:bg-[#0c1639]">
+          <button className="flex items-center text-sm justify-between gap-6 px-2 py-2 text-white bg-[#152765] rounded w-32 sm:w-auto hover:bg-[#0c1639]">
             <span>Print</span>
             <FaPrint />
 
@@ -164,7 +164,7 @@ const page = () => {
 
         {/* Search Button */}
         <div>
-          <button className="flex items-center justify-between gap-6 px-2 py-2 text-white bg-[#152765] rounded w-32 sm:w-auto hover:bg-[#0c1639]">
+          <button className="flex items-center text-sm justify-between gap-6 px-2 py-2 text-white bg-[#152765] rounded w-32 sm:w-auto hover:bg-[#0c1639]">
             <span>Search</span>
             <FaSearch />
 
