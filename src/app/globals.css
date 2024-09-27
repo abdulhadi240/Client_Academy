@@ -25,3 +25,11 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+.banner {
+  width: 100%;
+  max-width: 1500px; /* Ensure the banner has a maximum width */
+  overflow: hidden;
+}
