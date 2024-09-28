@@ -56,7 +56,7 @@ export default class ExternalControlledCarousel extends Component {
     const containerStyle = { margin: "5px 0 20px" }; // Container style
 
     return (
-      <div>
+      <div className="flex flex-col gap-4">
         {/* External control buttons */}
 
         {/* Carousel Component */}
