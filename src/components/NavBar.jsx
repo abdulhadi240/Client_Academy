@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';    // For internal routing in Next.js
+import Link from 'next-view-transitions'   // For internal routing in Next.js
 import dynamic from 'next/dynamic';
 
 // Dynamic imports for icons to reduce bundle size
@@ -14,7 +14,7 @@ const FaEnvelope = dynamic(() => import('react-icons/fa').then(mod => mod.FaEnve
 const Navbar = () => {
   return (
     <div
-      className="flex flex-col sm:flex-row items-center justify-between text-white p-2"
+      className="flex flex-col items-center justify-between p-2 text-white sm:flex-row"
       style={{ background: 'linear-gradient(55deg, rgb(185, 28, 28) 50%, rgb(30, 58, 138) 50%)' }}
     >
       {/* Left Side Content (Social Media and Contact) */}
@@ -46,12 +46,12 @@ const Navbar = () => {
       </div>
 
       {/* Right Side Content (Links and Arabic) */}
-      <div className="flex space-x-4 mt-2 sm:mt-0">
+      <div className="flex mt-2 space-x-4 sm:mt-0">
         <Link href="/services" className="hover:underline">SERVICES</Link>
         <Link href="/special-request" className="hover:underline">SPECIAL REQUEST</Link>
         <Link href="/blog" className="hover:underline">BLOG</Link>
         <Link href="/faq" className="hover:underline">FAQ</Link>
-        <div className="bg-white text-blue-900 px-4 py-2 rounded">
+        <div className="px-4 py-2 text-blue-900 bg-white rounded">
           <span>العربية</span>
         </div>
       </div>
