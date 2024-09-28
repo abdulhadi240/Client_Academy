@@ -3,7 +3,7 @@ import React from 'react'
 import { MdHomeWork } from "react-icons/md";
 const Feature_Mobile = ({ image, icon, number, heading, text }) => {
   return (
-    <div className='mt-32 overflow-hidden'>
+    <div className='overflow-hidden'>
         <div className=''>
           {/* Right side with Image */}
           <div>
