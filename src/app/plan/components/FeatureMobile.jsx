@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import { Carousel } from "react-responsive-carousel"; // Import the carousel
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
 import Feature_Mobile from "./Feature_Mobile";
-
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 export default class ExternalControlledCarousel extends Component {
   constructor(props) {
     super(props);
@@ -123,12 +124,14 @@ export default class ExternalControlledCarousel extends Component {
         </Carousel>
         <div style={containerStyle} className="flex justify-center gap-3 mt-16">
           {/* Prev Button */}
-          <button onClick={this.prev} style={buttonStyle} className="bg-[#152765] text-white font-semibold">
-            {'<'}
+          <button onClick={this.prev} style={buttonStyle} className="bg-[#152765] rounded-lg text-white font-semibold">
+            <MdKeyboardArrowLeft size={30}/>
+
           </button>
           {/* Next Button */}
-          <button onClick={this.next} style={buttonStyle} className="bg-[#152765] text-white font-semibold">
-          {'>'}
+          <button onClick={this.next} style={buttonStyle} className="bg-[#152765] rounded-lg text-white font-semibold">
+          <MdKeyboardArrowRight size={30}/>
+
           </button>
         </div>
       </div>

@@ -85,7 +85,7 @@ const Page = () => {
           }
         />
       </div>
-      <div className="sm:hidden">
+      <div className="p-5 sm:hidden">
       <FeatureMobile/>
       </div>
     </div>
