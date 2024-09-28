@@ -69,6 +69,7 @@ export default class ExternalControlledCarousel extends Component {
           showStatus={false} // Hide status
           showIndicators={false} // Show navigation dots
           showArrows={false}
+          swipeable={false}
         >
           {/* Carousel slides */}
           <Feature_Mobile
