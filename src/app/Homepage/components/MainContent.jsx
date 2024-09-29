@@ -4,24 +4,26 @@ import ServiceCard from "./ServiceCard";
 // components/MainContent.js
 const MainContent = () => {
     return (
-      <div className="flex justify-between gap-8 mt-8 ">
+      <div className="flex justify-between gap-8 mx-20 mt-8">
         
         {/* Left Column */}
-        <div className="flex flex-col items-start mx-10 space-y-4">
+        <div className="flex flex-col items-start">
           <Image
             src="/group401.png"
-            width={100}
-            height={100}
+            width={600}
+            height={600}
             alt="Laptop meeting"
-            className="w-full rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg"
           />
-          <h3 className="text-xl font-bold text-gray-800">
+          <div className="w-[600px]">
+          <h3 className="text-xl font-semibold tracking-wide text-gray-800 mt-14">
             The annual training plan for the courses and programs of the British Academy
           </h3>
-          <p className="text-gray-500">
-            The annual training plan for the courses and programs of the British Academy
+          <p className="mt-3 text-gray-500">
+          The annual training plan for the courses and programs of the British Academy
           </p>
-          <button className="px-4 py-2 text-white bg-blue-900 rounded-lg">Go to Plan</button>
+          </div>
+          <button className="px-4 py-2 mt-3 text-sm text-white bg-[#111F51] rounded-lg">Go to Plan</button>
         </div>
   
         {/* Right Column - Service List */}
@@ -29,27 +31,27 @@ const MainContent = () => {
           <ServiceCard
             title="Courses with discount"
             description="We provide the latest international courses at suitable prices"
-            icon="/path-to-icon/discount.png"
+            icon="/icon9.png"
           />
           <ServiceCard
             title="Approved Courses"
             description="The participant with the courses offered by us has many services and features"
-            icon="/path-to-icon/approved.png"
+            icon="/icon9.png"
           />
           <ServiceCard
             title="Featured Courses"
             description="We update the list of courses according to the needs of the labor market"
-            icon="/path-to-icon/featured.png"
+            icon="/icon8.png"
           />
           <ServiceCard
             title="Courses by specialization"
             description="More than 20 specializations in many fields"
-            icon="/path-to-icon/specialization.png"
+            icon="/icon7.png"
           />
           <ServiceCard
             title="Courses by city"
             description="Our favorite cities with attractive attractions"
-            icon="/path-to-icon/city.png"
+            icon="/icon6.png"
           />
         </div>
       </div>

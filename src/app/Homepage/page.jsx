@@ -26,7 +26,7 @@ const Page = () => {
 
       <section>
         {/* Hero Section */}
-        <div className="container py-16 px-16 bg-[rgba(157,204,255,0.3)] flex flex-col-reverse items-center justify-between mx-auto lg:flex-row">
+        <div className="container overflow-hidden py-16 px-24 bg-[#DEEEFD] flex flex-col-reverse items-center justify-between mx-auto lg:flex-row">
           <div className="space-y-6 text-center lg:w-1/2 lg:text-left">
             <h1 className="text-4xl font-bold leading-tight text-gray-800">
               The Most Prominent Courses That{" "}
@@ -51,16 +51,14 @@ const Page = () => {
           {/* Image and Button */}
           <div className="relative">
             <Image
-              src="/hero-image.webp"
+              src="/hero.png"
               height={400}
               width={400}
               alt="Person holding books at the academy"
-              className="rounded-full"
+              className=""
               priority={true} // Ensure hero image loads faster
             />
-            <button className="absolute bottom-0 left-0 px-6 py-3 text-white bg-blue-600 rounded-lg shadow-lg">
-              Show Plan
-            </button>
+            
           </div>
         </div>
 
