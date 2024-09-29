@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import HeaderSection from "@/components/HeaderSection";
-import { ViewTransitions } from 'next-view-transitions'
+import Navbar from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,7 +22,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ViewTransitions>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -32,6 +31,5 @@ export default function RootLayout({ children }) {
         <Footer/>
       </body>
     </html>
-    </ViewTransitions>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next-view-transitions'   // For internal routing in Next.js
+import Link from 'next/link';    // For internal routing in Next.js
 import dynamic from 'next/dynamic';
 
 // Dynamic imports for icons to reduce bundle size

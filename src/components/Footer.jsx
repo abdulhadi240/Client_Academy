@@ -1,5 +1,5 @@
 import Image from 'next/image'; // Next.js optimized image component
-import Link from 'next-view-transitions'
+import Link from 'next/link'; // Next.js Link for internal navigation
 import { FaYoutube, FaInstagram, FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
