@@ -33,18 +33,18 @@ const SpecializationSection = () => {
       <div className="container">
         
         {/* Title and Description */}
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-2xl font-bold text-center sm:text-3xl">
           Courses <span className="text-red-600">By Specialization</span>
         </h2>
         <div className='flex justify-center'>
-        <p className="mt-4 text-center text-gray-500 w-[800px] items-center">
+        <p className="mt-4 text-sm sm:text-base w-full p-3 sm:p-0 text-center text-gray-500 sm:w-[800px] items-center">
           The British Academy for Training and Development differs from other companies operating in the same field because it is a British-European company with excellence and there are specialized cadres with great practical experience...
         </p>
         </div>
         
         {/* Main Layout - Side Menus and Card Grid */}
-        <div className="flex flex-col justify-between gap-4 mx-2 mt-10 sm:mx-10 md:flex-row">
-          
+        <div className=" md:mx-10 md:flex-row">
+          <div className='flex flex-row justify-between gap-4 mx-2 mt-10 '>
           {/* Left Menu */}
           <div className="space-y-4">
             {menuItems.slice(0, 6).map((item) => (
@@ -58,7 +58,7 @@ const SpecializationSection = () => {
           </div>
           
           {/* Center - Grid of Cards */}
-          <div className="grid grid-cols-2 gap-5 mt-2 md:grid-cols-4">
+          <div className="hidden gap-5 mt-2 sm:grid sm:grid-cols-2 md:grid-cols-4">
             {selectedItem.data.map((title, index) => (
               <SpecializationCard key={index} title={title} />
             ))}
@@ -75,6 +75,14 @@ const SpecializationSection = () => {
               />
             ))}
           </div>
+          </div>
+          <div className='flex justify-center'>
+          <div className="grid grid-cols-2 gap-4 mt-10 md:hidden">
+            {selectedItem.data.map((title, index) => (
+              <SpecializationCard key={index} title={title} />
+            ))}
+          </div>
+          </div>
 
         </div>
       </div>
@@ -86,7 +94,7 @@ const SpecializationSection = () => {
 const SideMenuItem = ({ title, active, onClick }) => {
   return (
     <div
-      className={`w-56 h-auto p-3 text-center items-center m-2 mx-auto text-sm font-bold rounded-lg cursor-pointer ${active ? 'bg-[#152765] text-white' : 'bg-gray-100 text-gray-800'}`}
+      className={`md:w-56 h-auto p-3 text-center items-center m-2 mx-auto text-sm font-bold rounded-lg cursor-pointer ${active ? 'bg-[#152765] text-white' : 'bg-gray-100 text-gray-800'}`}
       onClick={onClick}
     >
       {title}

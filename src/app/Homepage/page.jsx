@@ -26,16 +26,17 @@ const Page = () => {
 
       <section>
         {/* Hero Section */}
-        <div className="container overflow-hidden py-16 px-24 bg-[#DEEEFD] flex flex-col-reverse items-center justify-between mx-auto lg:flex-row">
-          <div className="space-y-6 text-center lg:w-1/2 lg:text-left">
-            <h1 className="text-4xl font-bold leading-tight text-gray-800">
+        <div className="container p-6 overflow-hidden sm:py-16 sm:px-24 bg-[#DEEEFD] sm:flex sm:flex-col-reverse sm:items-center sm:justify-between mx-auto lg:flex-row">
+          <div className="w-full space-y-6 text-center lg:w-1/2 lg:text-left">
+            <h1 className="text-lg font-bold leading-tight text-gray-800 md:text-4xl sm:text-3xl">
               The Most Prominent Courses That{" "}
               <span className="text-blue-600">We Offer</span> In Our Academy{" "}
-              <br /> Share With Us To Get Better
+              Share With Us To Get Better
             </h1>
+            <button className="py-3 px-7 shadow-2xl rounded-full  bg-[#111F51] text-white ">Show Plan</button>
 
             {/* Course Cards */}
-            <div className="grid grid-cols-3 gap-7">
+            <div className="hidden sm:grid sm:grid-cols-3 gap-7">
               {[
                 { title: "Health & Fitness", desc: "Provides you with the latest" },
                 { title: "Personal Develop", desc: "Provides you with the latest" },
@@ -49,7 +50,7 @@ const Page = () => {
           </div>
 
           {/* Image and Button */}
-          <div className="relative">
+          <div className="relative hidden sm:block">
             <Image
               src="/hero.png"
               height={400}
@@ -63,7 +64,7 @@ const Page = () => {
         </div>
 
         {/* Search and Main Content */}
-        <div className="container px-4 py-16">
+        <div className="container hidden mt-10 sm:block sm:px-4 sm:mt-0 sm:py-16">
           <div className="flex justify-center">
             <SearchFilters />
           </div>
@@ -74,17 +75,17 @@ const Page = () => {
         {/* Specialization Section */}
         <SpecializationSection />
 
-        {/* Courses by Cities Carousel */}
+        {/* Courses by Cities Carousel*/} 
         <div className="mt-16">
           <SectionTitle title="Courses by" highlight="Cities" />
           <Carasoul />
         </div>
 
-        {/* Training Section */}
+        {/* Training Section 
         <div className="mt-32">
           <SectionTitle title="British Academy" highlight="For Training" />
           <Training />
-        </div>
+        </div>*/}
 
         {/* Request Course Section */}
         <div className="mt-32">
@@ -92,16 +93,17 @@ const Page = () => {
           <RequestCourse />
         </div>
 
-        {/* Latest Publications Section */}
+        {/* Latest Publications Section 
         <div className="mt-32">
           <SectionTitle title="Latest" highlight="Publication" />
           <DynamicTabs />
-        </div>
+        </div>*/}
 
         {/* Team Section */}
         <div className="mt-32 team">
           <SectionTitle title="Team" highlight="Work" />
-          <div className="flex justify-center gap-4 mt-10 overflow-hidden">
+          <div className="flex justify-center">
+          <div className="grid grid-cols-2 gap-4 mt-10 overflow-hidden sm:grid-cols-3">
             {[
               { image: "/4.png", name: "Nattasha Julie", designation: "Design, Australia", number: "+1 (378) 400-1234", email: "julie@email.com" },
               { image: "/Photo.png", name: "John Doe", designation: "Developer, USA", number: "+1 (555) 123-4567", email: "john@email.com" },
@@ -116,6 +118,7 @@ const Page = () => {
                 email={teamMember.email}
               />
             ))}
+          </div>
           </div>
         </div>
 

@@ -2,7 +2,7 @@
 const SearchFilters = () => {
     return (
       <div className="w-[700px]  shadow-xl rounded-xl">
-      <div className="flex justify-center gap-4 p-4 rounded-xl">
+      <div className="grid grid-cols-3 gap-4 p-3 sm:flex sm:justify-center sm:gap-4 sm:p-4 rounded-xl">
         <select className="p-2 border border-gray-300 rounded-lg w-28">
           <option>Place</option>
         </select>

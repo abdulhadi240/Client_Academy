@@ -12,17 +12,17 @@ const RequestCourse = () => {
           <p className="flex justify-center text-gray-300">You can contact us for a special course</p>
 
           {/* Form */}
-          <form className="mt-6 space-y-4">
+          <form className="mt-6 ">
             <div className="flex flex-col lg:flex-row lg:space-x-4">
               <input 
                 type="text" 
                 placeholder="Full Name" 
-                className="w-full px-4 py-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
+                className="w-full py-2 mb-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
               />
               <input 
                 type="email" 
                 placeholder="Email" 
-                className="w-full px-4 py-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
+                className="w-full py-2 mb-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
               />
             </div>
 
@@ -30,10 +30,10 @@ const RequestCourse = () => {
               <input 
                 type="text" 
                 placeholder="Mobile" 
-                className="w-full px-4 py-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
+                className="w-full py-2 mb-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
               />
               <select 
-                className="w-full px-4 py-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
+                className="w-full py-2 mb-2 bg-transparent border-b-2 border-gray-300 focus:outline-none"
               >
                 <option value="request course" className='text-[#111F51]'>Request Course</option>
                 <option value="course 1" className='text-[#111F51]'>Course 1</option>
@@ -41,12 +41,12 @@ const RequestCourse = () => {
               </select>
             </div>
 
-            <button className="w-full p-2 text-white bg-[#B12E33] rounded-lg">Send</button>
+            <button className="w-full p-2 mt-5 text-white bg-[#B12E33] rounded-lg">Send</button>
           </form>
         </div>
 
         {/* Decorative Circles */}
-        <div className="absolute hidden top-4 left-4 lg:block">
+        <div className="absolute top-4 left-4 lg:block">
           <div className="grid grid-cols-4 gap-2">
             {Array(20).fill().map((_, idx) => (
               <div key={idx} className="w-1 h-1 bg-white rounded-full"></div>
@@ -54,7 +54,7 @@ const RequestCourse = () => {
           </div>
         </div>
 
-        <div className="absolute hidden bottom-4 right-4 lg:block">
+        <div className="absolute bottom-4 right-4 lg:block">
           <div className="grid grid-cols-4 gap-2">
             {Array(20).fill().map((_, idx) => (
               <div key={idx} className="w-1 h-1 bg-white rounded-full"></div>
@@ -63,23 +63,23 @@ const RequestCourse = () => {
         </div>
 
         {/* Circular Profile Images */}
-        <div className="absolute top-32 lg:left-8">
+        <div className="absolute top-32 left-32 lg:top-32 lg:left-8">
         <Image
             src="/1.png" 
             alt="Profile"
             height={50}
             width={50} 
-            className="rounded-full"
+            className="hidden rounded-full sm:block"
           />
         </div>
 
-        <div className="absolute bottom-32 left-32">
+        <div className="absolute top-32 left-32 lg:bottom-32">
           <Image
             src="/1.png" 
             alt="Profile"
             height={50}
             width={50} 
-            className="rounded-full"
+            className="hidden rounded-full sm:block"
           />
         </div>
 
@@ -89,7 +89,7 @@ const RequestCourse = () => {
             alt="Profile"
             height={50}
             width={50} 
-            className="rounded-full"
+            className="hidden rounded-full sm:block"
           />
         </div>
 
@@ -99,7 +99,7 @@ const RequestCourse = () => {
             alt="Profile"
             height={50}
             width={50} 
-            className="rounded-full"
+            className="hidden rounded-full sm:block"
           />
         </div>
 

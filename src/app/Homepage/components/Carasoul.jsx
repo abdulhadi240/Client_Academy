@@ -8,38 +8,40 @@ import Cities from "./Cities";
 export default class Carasoul extends React.Component {
   constructor(props) {
     super(props);
-
-    this.carouselRef = React.createRef();
+    this.state = {
+      currentIndex: 0,
+    };
   }
 
   // Move to the next slide
   next = () => {
-    this.carouselRef.current.next();
+    this.setState((prevState) => ({
+      currentIndex: Math.min(prevState.currentIndex + 1, 3), // Assuming you have 4 slides (0-3)
+    }));
   };
 
   // Move to the previous slide
   prev = () => {
-    this.carouselRef.current.prev();
+    this.setState((prevState) => ({
+      currentIndex: Math.max(prevState.currentIndex - 1, 0),
+    }));
   };
 
   render() {
-    const buttonStyle = {
-      fontSize: 20,
-      padding: "5px 20px",
-      margin: "5px 0px",
-    };
+    const { currentIndex } = this.state;
 
     return (
       <div className="flex flex-col items-center justify-center gap-4 mt-32 overflow-hidden">
         {/* Carousel Component */}
         <Carousel
-          ref={this.carouselRef}
+          selectedItem={currentIndex}
           autoPlay={true}
           infiniteLoop={true}
           showThumbs={false}
           showStatus={false}
           showIndicators={false}
           swipeable={true}
+          onChange={(index) => this.setState({ currentIndex: index })} // Update state on slide change
         >
           {/* Slide 1 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
@@ -48,7 +50,6 @@ export default class Carasoul extends React.Component {
             <Cities image={"/img.png"} name={"Paris"} country={"France"} />
             <Cities image={"/img.png"} name={"New York"} country={"USA"} />
             <Cities image={"/img.png"} name={"Berlin"} country={"Germany"} />
-            <Cities image={"/img.png"} name={"Tokyo"} country={"Japan"} />
             <Cities image={"/img.png"} name={"Tokyo"} country={"Japan"} />
           </div>
 
@@ -60,27 +61,20 @@ export default class Carasoul extends React.Component {
             <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} />
             <Cities image={"/img.png"} name={"Shanghai"} country={"China"} />
             <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} />
-            <Cities image={"/img.png"} name={"Tokyo"} country={"Japan"} />
           </div>
 
           {/* Slide 3 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Sydney"} country={"Australia"} />
-            <Cities image={"/img.png"} name={"Toronto"} country={"Canada"} />
-            <Cities image={"/img.png"} name={"Barcelona"} country={"Spain"} />
-            <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} />
-            <Cities image={"/img.png"} name={"Shanghai"} country={"China"} />
-            <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} />
+            <Cities image={"/img.png"} name={"Los Angeles"} country={"USA"} />
+            <Cities image={"/img.png"} name={"Madrid"} country={"Spain"} />
+            <Cities image={"/img.png"} name={"Rome"} country={"Italy"} />
           </div>
 
           {/* Slide 4 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Sydney"} country={"Australia"} />
-            <Cities image={"/img.png"} name={"Toronto"} country={"Canada"} />
-            <Cities image={"/img.png"} name={"Barcelona"} country={"Spain"} />
-            <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} />
-            <Cities image={"/img.png"} name={"Shanghai"} country={"China"} />
-            <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} />
+            <Cities image={"/img.png"} name={"Bangkok"} country={"Thailand"} />
+            <Cities image={"/img.png"} name={"Singapore"} country={"Singapore"} />
+            <Cities image={"/img.png"} name={"Istanbul"} country={"Turkey"} />
           </div>
         </Carousel>
 
@@ -88,14 +82,14 @@ export default class Carasoul extends React.Component {
         <div className="flex justify-end gap-2 mt-16">
           <button
             onClick={this.prev}
-            style={buttonStyle}
+            style={{ fontSize: 20, padding: "5px 20px", margin: "5px 0px" }}
             className="bg-[#152765] rounded-lg text-white font-semibold"
           >
             <MdKeyboardArrowLeft size={30} />
           </button>
           <button
             onClick={this.next}
-            style={buttonStyle}
+            style={{ fontSize: 20, padding: "5px 20px", margin: "5px 0px" }}
             className="bg-[#152765] rounded-lg text-white font-semibold"
           >
             <MdKeyboardArrowRight size={30} />

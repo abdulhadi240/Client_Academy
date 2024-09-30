@@ -19,8 +19,7 @@ const Team = ({image , name , designation , number ,email}) => {
               src={image}
               alt="Profile Image"
               layout="fill"
-              objectFit="cover"
-              className="image-style"
+              className="object-cover image-style"
             />
           </div>
 
