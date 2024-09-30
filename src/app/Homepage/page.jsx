@@ -11,6 +11,7 @@ import RequestCourse from "./components/RequestCourse";
 import DynamicTabs from "./components/DynamicTabs";
 import Team from "./components/Team";
 import CustomerCarasoul from "./components/CustomerCarasoul";
+import MobileFilter from "./components/MobileFilter";
 
 const Page = () => {
   return (
@@ -33,7 +34,7 @@ const Page = () => {
               <span className="text-blue-600">We Offer</span> In Our Academy{" "}
               Share With Us To Get Better
             </h1>
-            <button className="py-3 px-7 shadow-2xl rounded-full  bg-[#111F51] text-white ">Show Plan</button>
+            <button className="py-2 px-7 shadow-2xl rounded-full  bg-[#111F51] text-white ">Show Plan</button>
 
             {/* Course Cards */}
             <div className="hidden sm:grid sm:grid-cols-3 gap-7">
@@ -62,6 +63,9 @@ const Page = () => {
             
           </div>
         </div>
+        <div className="block sm:hidden">
+        <MobileFilter/>
+        </div>
 
         {/* Search and Main Content */}
         <div className="container hidden mt-10 sm:block sm:px-4 sm:mt-0 sm:py-16">
@@ -75,29 +79,29 @@ const Page = () => {
         {/* Specialization Section */}
         <SpecializationSection />
 
-        {/* Courses by Cities Carousel*/} 
+        {/* Courses by Cities Carousel */} 
         <div className="mt-16">
           <SectionTitle title="Courses by" highlight="Cities" />
           <Carasoul />
         </div>
 
-        {/* Training Section 
-        <div className="mt-32">
+        {/* Training Section */}
+        <div className="hidden mt-32 sm:block">
           <SectionTitle title="British Academy" highlight="For Training" />
           <Training />
-        </div>*/}
+        </div>
 
-        {/* Request Course Section */}
+        {/* Request Course Section*/} 
         <div className="mt-32">
           <SectionTitle title="Request A" highlight="Course" />
           <RequestCourse />
         </div>
 
-        {/* Latest Publications Section 
+        {/* Latest Publications Section */}
         <div className="mt-32">
           <SectionTitle title="Latest" highlight="Publication" />
           <DynamicTabs />
-        </div>*/}
+        </div>
 
         {/* Team Section */}
         <div className="mt-32 team">
@@ -122,11 +126,11 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Customer Carousel */}
-        <div className="mt-32 customer">
+        {/* Customer Carousel 
+        <div className="mt-32 overflow-hidden customer">
           <SectionTitle title="Most Of" highlight="Our Customers" />
-          <CustomerCarasoul />
-        </div>
+          <CustomerCarasoul /> 
+        </div>*/}
       </section>
     </>
   );
