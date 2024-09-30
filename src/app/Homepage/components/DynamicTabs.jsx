@@ -53,8 +53,7 @@ const WorkWithUsForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Handle form submission logic here
+
     const formData = new FormData();
     formData.append('name', name);
     formData.append('degree', degree);
@@ -64,23 +63,21 @@ const WorkWithUsForm = () => {
       formData.append('cv', file);
     }
 
-    // Here you can implement a fetch request to send the formData to your server
     console.log('Form submitted with data:', formData);
   };
 
   return (
-    <div className="container mx-auto sm:p-6">
-      <form onSubmit={handleSubmit} className="p-3 bg-white rounded-lg shadow-md sm:p-6">
-        <h2 className="mb-4 text-xl font-semibold">Application Form</h2>
-        
-        <div className="mb-4">
+    <div className="container sm:mx-auto sm:p-6">
+      <form onSubmit={handleSubmit} className="w-full bg-white sm:p-6 ">
+
+        <div className="w-full mb-4">
           <label className="block text-gray-700" htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 rounded-md"
+            className="block w-full p-2 mt-1 border border-gray-300 "
             required
           />
         </div>
@@ -92,7 +89,7 @@ const WorkWithUsForm = () => {
             id="degree"
             value={degree}
             onChange={(e) => setDegree(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 rounded-md"
+            className="block w-full p-2 mt-1 border border-gray-300 "
             required
           />
         </div>
@@ -104,7 +101,7 @@ const WorkWithUsForm = () => {
             id="residence"
             value={residence}
             onChange={(e) => setResidence(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 rounded-md"
+            className="block w-full p-2 mt-1 border border-gray-300 "
             required
           />
         </div>
@@ -116,21 +113,12 @@ const WorkWithUsForm = () => {
             id="specialization"
             value={specialization}
             onChange={(e) => setSpecialization(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 rounded-md"
+            className="block w-full p-2 mt-1 border border-gray-300 "
             required
           />
         </div>
 
-        <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="cv">Upload CV</label>
-          <input
-            type="file"
-            id="cv"
-            onChange={handleFileChange}
-            className="block w-full p-2 mt-1 border border-gray-300 rounded-md"
-            required
-          />
-        </div>
+        
 
         <div className="flex justify-between mt-6">
           <button type="submit" className="bg-[#152765] text-white text-sm font-light py-2 px-4 rounded-lg">
@@ -148,33 +136,52 @@ const WorkWithUsForm = () => {
 const DynamicTabs = () => {
   const [activeTab, setActiveTab] = useState('videos');
 
-  // Find the content of the active tab
   const activeContent = tabsData.find((tab) => tab.id === activeTab);
 
   return (
     <section className="py-6 overflow-hidden">
       <div className="container sm:mx-auto">
         {/* Tabs Navigation */}
-        <nav className="p-4 mb-8 space-x-4 sm:p-0 rounded-3xl">
-          <div className='grid grid-cols-2 gap-3 text-center sm:grid-cols-4 md:grid-cols-5 '>
-          {tabsData.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`py-2 px-5 sm:px-16 w-full text-center items-center rounded-2xl text-sm ${
-                activeTab === tab.id ? 'bg-[#152765] text-white' : 'bg-gray-100 text-gray-800'
-              }`}
-              role="tab"
-              aria-selected={activeTab === tab.id}
-            >
-              {tab.label}
-            </button>
-          ))}
+        <nav className="p-1 sm:p-0 rounded-xl">
+          <div className="grid gap-3 text-center sm:gap-6">
+            {/* First row with 3 tabs */}
+            <div className="grid grid-cols-3 gap-3">
+              {tabsData.slice(0, 3).map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`py-2 px-6 text-center rounded-lg text-sm ${
+                    activeTab === tab.id ? 'bg-[#B12E33] text-white' : 'bg-[#152765] text-white'
+                  }`}
+                  role="tab"
+                  aria-selected={activeTab === tab.id}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Second row with 2 centered tabs */}
+            <div className="grid justify-center grid-cols-2 gap-3">
+              {tabsData.slice(3).map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`py-2 px-6 text-center rounded-lg text-sm ${
+                    activeTab === tab.id ? 'bg-[#B12E33] text-white' : 'bg-[#152765] text-white'
+                  }`}
+                  role="tab"
+                  aria-selected={activeTab === tab.id}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
           </div>
         </nav>
 
         {/* Dynamic Content */}
-        <div className="flex flex-col items-center justify-between gap-10 mx-3 mt-32 sm:mx-6 md:mx-16 lg:flex-row">
+        <div className="flex flex-col gap-10 p-2 mt-10 sm:mt-32 sm:items-center sm:justify-between sm:mx-6 md:mx-16 lg:flex-row">
           {/* Text Content */}
           <div className="space-y-4 lg:w-1/2">
             {activeTab === 'workwithus' ? (
@@ -200,7 +207,7 @@ const DynamicTabs = () => {
               height={500}
               width={500}
               className="z-10 rounded-lg shadow-lg"
-              loading="lazy" // Use lazy loading for better performance
+              loading="lazy"
             />
 
             {/* Bottom-right decorative box */}

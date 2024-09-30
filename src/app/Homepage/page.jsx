@@ -35,12 +35,12 @@ const Page = () => {
       {/* Hero Section */}
       <div className="container p-6 overflow-hidden sm:py-16 sm:px-24 bg-[#DEEEFD] sm:flex sm:flex-col-reverse sm:items-center sm:justify-between mx-auto lg:flex-row">
         <div className="w-full space-y-6 text-center lg:w-1/2 lg:text-left">
-          <h1 className="text-lg font-bold leading-tight text-gray-800 md:text-4xl sm:text-3xl">
+          <h1 className="text-sm font-bold leading-tight text-gray-800 md:text-4xl sm:text-3xl">
             The Most Prominent Courses That{' '}
-            <span className="text-blue-600">We Offer</span> In Our Academy Share With Us To Get
+            <span className="">We Offer</span> In Our Academy Share With Us To Get
             Better
           </h1>
-          <button className="py-2 px-7 shadow-2xl rounded-full bg-[#111F51] text-white">
+          <button className="py-2 px-7 shadow-2xl text-sm font-light rounded-full bg-[#111F51] text-white">
             Show Plan
           </button>
 
@@ -87,7 +87,7 @@ const Page = () => {
       <SpecializationSection />
 
       {/* Courses by Cities Carousel */}
-      <div className="mt-16">
+      <div className=" sm:mt-16">
         <SectionTitle title="Courses by" highlight="Cities" />
         <Carasoul />
       </div>
