@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { menu } from "./Menu";
+import MobileMenu from "./MobileMenu";
 // Dynamic imports for better performance
 const FaFacebookF = dynamic(() =>
   import("react-icons/fa").then((mod) => mod.FaFacebookF)
@@ -55,7 +56,10 @@ export const metadata = {
 const HeaderSection = () => {
   return (
     <>
-      <section>
+    <header className="md:hidden">
+      <MobileMenu/>
+    </header>
+      <section className="hidden sm:block">
         {/* Top Bar */}
         <div
           className="items-center justify-between hidden p-2 text-white sm:flex sm:flex-row"

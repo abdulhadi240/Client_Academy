@@ -1,10 +1,15 @@
 import Image from 'next/image'; // Next.js optimized image component
 import Link from 'next/link'; // Next.js Link for internal navigation
 import { FaYoutube, FaInstagram, FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import FooterMobile from './FooterMobile';
 
 const Footer = () => {
   return (
-    <footer className="px-4 pt-32 bg-white sm:px-16">
+    <footer>
+      <div className='md:hidden'>
+      <FooterMobile/>
+      </div>
+    <div className="hidden px-4 pt-32 bg-white sm:px-16 md:block">
       <div className="container flex flex-col items-start justify-between mx-auto space-y-10 sm:flex-row sm:space-y-0">
         {/* Logo and Description */}
         <div className="w-full sm:w-auto">
@@ -98,6 +103,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
     </footer>
   );
 };
