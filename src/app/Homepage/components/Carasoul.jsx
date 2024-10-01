@@ -45,43 +45,43 @@ export default class Carasoul extends React.Component {
         >
           {/* Slide 1 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Manchester"} country={"UK"} />
-            <Cities image={"/img.png"} name={"London"} country={"UK"} />
-            <Cities image={"/img.png"} name={"Paris"} country={"France"}  />
-            <Cities image={"/img.png"} name={"New York"} country={"USA"} mobile/>
-            <Cities image={"/img.png"} name={"Berlin"} country={"Germany"} mobile />
-            <Cities image={"/img.png"} name={"Tokyo"} country={"Japan"} mobile/>
+            <Cities image={"/img.webp"} name={"Manchester"} country={"UK"} />
+            <Cities image={"/img.webp"} name={"London"} country={"UK"} />
+            <Cities image={"/img.webp"} name={"Paris"} country={"France"}  />
+            <Cities image={"/img.webp"} name={"New York"} country={"USA"} mobile/>
+            <Cities image={"/img.webp"} name={"Berlin"} country={"Germany"} mobile />
+            <Cities image={"/img.webp"} name={"Tokyo"} country={"Japan"} mobile/>
           </div>
 
           {/* Slide 2 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Sydney"} country={"Australia"} />
-            <Cities image={"/img.png"} name={"Toronto"} country={"Canada"} />
-            <Cities image={"/img.png"} name={"Barcelona"} country={"Spain"} />
-            <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} mobile/>
-            <Cities image={"/img.png"} name={"Shanghai"} country={"China"} mobile/>
-            <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} mobile />
+            <Cities image={"/img.webp"} name={"Sydney"} country={"Australia"} />
+            <Cities image={"/img.webp"} name={"Toronto"} country={"Canada"} />
+            <Cities image={"/img.webp"} name={"Barcelona"} country={"Spain"} />
+            <Cities image={"/img.webp"} name={"Moscow"} country={"Russia"} mobile/>
+            <Cities image={"/img.webp"} name={"Shanghai"} country={"China"} mobile/>
+            <Cities image={"/img.webp"} name={"Dubai"} country={"UAE"} mobile />
           </div>
 
           {/* Slide 3 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Los Angeles"} country={"USA"} />
-            <Cities image={"/img.png"} name={"Madrid"} country={"Spain"} />
-            <Cities image={"/img.png"} name={"Rome"} country={"Italy"} />
-            <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} mobile/>
-            <Cities image={"/img.png"} name={"Shanghai"} country={"China"} mobile/>
-            <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} mobile/>
+            <Cities image={"/img.webp"} name={"Los Angeles"} country={"USA"} />
+            <Cities image={"/img.webp"} name={"Madrid"} country={"Spain"} />
+            <Cities image={"/img.webp"} name={"Rome"} country={"Italy"} />
+            <Cities image={"/img.webp"} name={"Moscow"} country={"Russia"} mobile/>
+            <Cities image={"/img.webp"} name={"Shanghai"} country={"China"} mobile/>
+            <Cities image={"/img.webp"} name={"Dubai"} country={"UAE"} mobile/>
           </div>
         
 
           {/* Slide 4 with cities */}
           <div className="flex justify-center max-w-6xl gap-4 mx-auto">
-            <Cities image={"/img.png"} name={"Bangkok"} country={"Thailand"} />
-            <Cities image={"/img.png"} name={"Singapore"} country={"Singapore"} />
-            <Cities image={"/img.png"} name={"Istanbul"} country={"Turkey"} />
-            <Cities image={"/img.png"} name={"Moscow"} country={"Russia"} mobile/>
-            <Cities image={"/img.png"} name={"Shanghai"} country={"China"} mobile/>
-            <Cities image={"/img.png"} name={"Dubai"} country={"UAE"} mobile/>
+            <Cities image={"/img.webp"} name={"Bangkok"} country={"Thailand"} />
+            <Cities image={"/img.webp"} name={"Singapore"} country={"Singapore"} />
+            <Cities image={"/img.webp"} name={"Istanbul"} country={"Turkey"} />
+            <Cities image={"/img.webp"} name={"Moscow"} country={"Russia"} mobile/>
+            <Cities image={"/img.webp"} name={"Shanghai"} country={"China"} mobile/>
+            <Cities image={"/img.webp"} name={"Dubai"} country={"UAE"} mobile/>
           
           </div>
         </Carousel>

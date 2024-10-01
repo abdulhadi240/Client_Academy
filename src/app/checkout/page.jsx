@@ -14,9 +14,9 @@ const Checkout = () => {
           {/* Card Logos */}
           <div className="flex justify-center mb-6 space-x-4">
             <Image src="/paypal.png" width={60} height={60} alt="Paypal" className='border-[1px] rounded-lg'/>
-            <Image src="/ae.jfif" width={60} height={60} alt="American Express" className='border-[1px] rounded-lg'/>
+            <Image src="/ae.webp" width={60} height={60} alt="American Express" className='border-[1px] rounded-lg'/>
             <Image src="/visa.png" width={60} height={60} alt="Visa" className='border-[1px] rounded-lg'/>
-            <Image src="/master.jfif" width={80} height={80} alt="MasterCard" className='border-[1px] rounded-lg'/>
+            <Image src="/master.png" width={80} height={80} alt="MasterCard" className='border-[1px] rounded-lg'/>
           </div>
 
           {/* Form Inputs */}
@@ -75,7 +75,7 @@ const Checkout = () => {
           <div className="space-y-4">
             {/* Summary Items */}
             <div className="flex items-center justify-between">
-              <Image src="/item.jfif" width={60} height={60} alt="Item Image" className='rounded-lg' />
+              <Image src="/item.webp" width={60} height={60} alt="Item Image" className='rounded-lg' />
               <div className="text-sm">
                 <p className="font-semibold">Adipiscing elit</p>
                 <p className="text-gray-500">Lorem ipsum dolor sit amet...</p>
@@ -83,7 +83,7 @@ const Checkout = () => {
               <p className="font-bold">$24.69</p>
             </div>
             <div className="flex items-center justify-between">
-              <Image src="/item.jfif" width={60} height={60} alt="Item Image" className='rounded-lg' />
+              <Image src="/item.webp" width={60} height={60} alt="Item Image" className='rounded-lg' />
               <div className="text-sm">
                 <p className="font-semibold">Adipiscing elit</p>
                 <p className="text-gray-500">Lorem ipsum dolor sit amet...</p>

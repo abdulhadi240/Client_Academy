@@ -7,11 +7,11 @@ const CustomerCarasoul = () => {
     <div className="flex items-center justify-center w-full mt-10">
       <div className="sm:w-[70%]">
         <Marquee gradient pauseOnHover autoFill>
-          <MyComponent image={'/logo1.png'} />
-          <MyComponent image={'/logo2.png'} />
-          <MyComponent image={'/logo3.png'} />
-          <MyComponent image={'/logo5.png'} />
-          <MyComponent image={'/logo6.png'} />
+          <MyComponent image={'/logo1.webp'} />
+          <MyComponent image={'/logo2.webp'} />
+          <MyComponent image={'/logo3.webp'} />
+          <MyComponent image={'/logo5.webp'} />
+          <MyComponent image={'/logo6.webp'} />
 
         </Marquee>
       </div>

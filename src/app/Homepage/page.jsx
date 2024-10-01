@@ -61,7 +61,7 @@ const Page = () => {
         {/* Image and Button */}
         <div className="relative hidden sm:block">
           <Image
-            src="/hero.png"
+            src="/hero.webp"
             height={400}
             width={400}
             alt="Person holding books at the academy"

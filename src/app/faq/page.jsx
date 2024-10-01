@@ -16,7 +16,7 @@ const Page = () => {
           {" "}
           {/* Set height and make container relative */}
           <Image
-            src="/plan.png"
+            src="/plan.webp"
             alt="banner"
             layout="fill" // Fill the entire container
             objectFit="cover" // Maintain aspect ratio without stretching
@@ -162,7 +162,7 @@ const Page = () => {
         {/* Image Section */}
         <div className="">
           <Image
-            src="/faq.jfif"
+            src="/faq.webp"
             width={500}
             height={200}
             alt="Planning Image"

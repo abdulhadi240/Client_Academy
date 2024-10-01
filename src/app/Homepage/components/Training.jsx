@@ -23,7 +23,7 @@ const Training = () => {
         </div>
       </div>
       <div className="right">
-        <Image src={'/12.png'} width={500} height={500} alt="iamge" className="rounded-lg"/>
+        <Image src={'/12.webp'} width={500} height={500} alt="iamge" className="rounded-lg"/>
       </div>
     </div>
   );

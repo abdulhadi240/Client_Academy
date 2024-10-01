@@ -6,32 +6,32 @@ const Page = () => {
     {
       id: 1,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
     {
       id: 2,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
     {
       id: 3,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
     {
       id: 4,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
     {
       id: 5,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
     {
       id: 6,
       name: "Egypt",
-      image: "/image.jfif", // Replace with actual image path
+      image: "/image.webp", // Replace with actual image path
     },
   ];
 

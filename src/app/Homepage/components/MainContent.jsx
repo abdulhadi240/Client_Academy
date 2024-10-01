@@ -9,7 +9,7 @@ const MainContent = () => {
         {/* Left Column */}
         <div className="flex flex-col items-start">
           <Image
-            src="/group401.png"
+            src="/group401.webp"
             width={600}
             height={600}
             alt="Laptop meeting"
