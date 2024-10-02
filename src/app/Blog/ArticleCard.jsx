@@ -1,0 +1,38 @@
+// components/ArticleCard.js
+import { Link } from 'next-view-transitions';
+import Image from 'next/image';
+
+const ArticleCard = ({ title, category, date, description, imageSrc, button_data ,slug}) => {
+  return (
+    <div className="overflow-hidden bg-[#F9F9F9] p-2 rounded-lg shadow-lg">
+      <div className="relative h-40 m-3 md:h-48">
+        <Image
+          src={imageSrc}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          className="object-cover w-full h-full rounded-2xl"
+        />
+        <div className="absolute bottom-0 left-0 right-0 flex justify-start gap-3 p-2">
+          {button_data.map((item, index) => (
+            <button key={index} className='z-10 py-2 font-medium text-xs px-5 bg-[#F9F9F9] rounded-full'>
+              {item}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="px-4">
+        <div className="flex items-center space-x-2 text-sm text-gray-500">
+          <span className='text-xs'>{date}</span>
+        </div>
+        <div className='flex flex-col gap-3 mb-4'>
+          <h3 className="mt-2 text-xl font-semibold">{title}</h3>
+          <p className="mt-2 text-sm text-gray-600">{description}</p>
+          <Link href={`/Blog/${slug}`} className="block mt-3 text-xs text-black underline hover:text-indigo-600 hover:underline">Read More</Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ArticleCard;
