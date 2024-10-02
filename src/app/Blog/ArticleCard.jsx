@@ -1,5 +1,4 @@
-// components/ArticleCard.js
-import { Link } from 'next-view-transitions';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const ArticleCard = ({ title, category, date, description, imageSrc, button_data ,slug}) => {
