@@ -39,7 +39,7 @@ const Page = () => {
     <div className="container p-4 mx-auto">
       {/* Heading and World Map */}
       <section className="mt-12 mb-12 text-center">
-        <h2 className="text-2xl font-bold text-[#1B2559]">
+        <h2 className="text-2xl font-bold text-[#1B2559] dark:text-white">
           Courses By <span className="text-secondary">City</span>
         </h2>
         <div className="flex justify-center my-6">
@@ -75,7 +75,7 @@ const Page = () => {
               className="w-64 rounded-lg h-72 brightness-75"
             />
             <div className="mt-4 text-start">
-              <h3 className="text-sm font-semibold">{course.name}</h3>
+              <h3 className="text-sm font-semibold dark:text-black" >{course.name}</h3>
               <div className='flex justify-center mb-4'>
               <button className="flex justify-center w-auto px-20 py-2 mx-4 mt-2 text-sm text-center text-white rounded bg-primary hover:bg-secondary">
                 Accept

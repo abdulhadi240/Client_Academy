@@ -3,7 +3,7 @@ import React from 'react'
 
 const Block = ({Icon , title , text}) => {
   return (
-    <div className='flex mt-4 gap-4 items-center'>
+    <div className='flex items-center gap-4 mt-4 dark:text-black'>
         <div>
             <Icon size={20}/>
         </div>

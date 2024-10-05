@@ -36,8 +36,8 @@ const SpecializationSection = () => {
         <h2 className="text-2xl font-bold text-center sm:text-3xl">
           Courses <span className="text-red-600">By Specialization</span>
         </h2>
-        <div className='flex justify-center'>
-        <p className="mt-4 text-sm hidden sm:block sm:text-base w-full p-3 sm:p-0 text-center text-gray-500 sm:w-[800px] items-center">
+        <div className='flex justify-center dark:text-white'>
+        <p className="mt-4 text-sm hidden sm:block sm:text-base w-full p-3 sm:p-0 text-center text-gray-500 dark:text-white sm:w-[800px] items-center">
           The British Academy for Training and Development differs from other companies operating in the same field because it is a British-European company with excellence and there are specialized cadres with great practical experience...
         </p>
         </div>

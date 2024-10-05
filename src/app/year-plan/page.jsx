@@ -181,7 +181,7 @@ const page = () => {
         price_week={course.price_week}
         price_two_week={course.price_two_week}
         price_three_week={course.price_three_week}
-        backgroundClass={index % 2 === 0 ? 'bg-[#9DCCFF4D] sm:shadow-lg' : 'bg-white sm:shadow-lg'}
+        backgroundClass={index % 2 === 0 ? 'bg-[#9DCCFF4D] dark:bg-black dark:text-white sm:shadow-lg' : 'bg-white sm:shadow-lg text-gray-500'}
       />
       ))}
     </div>

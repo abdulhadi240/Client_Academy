@@ -12,13 +12,13 @@ const Course_column = ({
 }) => {
   return (
     <div
-      className={`flex flex-wrap items-center justify-center sm:justify-between  sm:p-6 mt-4  sm:mx-4 p-6 sm:rounded-xl ${backgroundClass}`}
+      className={`flex flex-wrap items-center justify-center  sm:justify-between  sm:p-6 mt-4  sm:mx-4 p-6 sm:rounded-xl ${backgroundClass}`}
     >
         <div className="flex gap-4">
       {/* Left section: Course and Dates */}
       <div className="flex flex-col mb-4 text-center sm:mr-4 sm:text-left lg:mb-0">
-        <div className="text-xs font-light text-gray-500">course</div>
-        <div className="text-[11px] sm:text-sm font-semibold text-gray-800 lg:w-44">
+        <div className="text-xs font-light ">course</div>
+        <div className="text-[11px] sm:text-sm font-semibold  lg:w-44">
           {course_name}
         </div>
       </div>
@@ -26,17 +26,17 @@ const Course_column = ({
       {/* Dates section */}
       <div className="flex gap-4 mb-4 text-center sm:flex-row sm:items-center sm:mb-0 sm:mr-4 sm:text-left">
         <div className="flex flex-col mb-2 sm:mb-0 sm:mr-2">
-          <span className="text-xs text-gray-500">date 1</span>
-          <span className="text-[11px] sm:text-sm font-semibold text-gray-900">
+          <span className="text-xs ">date 1</span>
+          <span className="text-[11px] sm:text-sm font-semibold ">
             {date1}
           </span>
         </div>
-        <span className="hidden text-lg font-bold text-gray-700 sm:inline">
+        <span className="hidden text-lg font-bold sm:inline">
           —
         </span>
         <div className="flex flex-col sm:ml-2">
-          <span className="text-xs text-gray-500">date 2</span>
-          <span className="text-[11px] sm:text-sm font-semibold text-gray-900">
+          <span className="text-xs ">date 2</span>
+          <span className="text-[11px] sm:text-sm font-semibold ">
             {date2}
           </span>
         </div>
@@ -53,8 +53,8 @@ const Course_column = ({
             <FaMoneyBillAlt className="text-blue-600" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[8px] sm:text-xs text-gray-500">price week</span>
-            <span className="text-xs text-gray-800">{price_week}</span>
+            <span className="text-[8px] sm:text-xs ">price week</span>
+            <span className="text-xs ">{price_week}</span>
           </div>
         </div>
 
@@ -63,10 +63,10 @@ const Course_column = ({
             <FaMoneyBillAlt className="text-blue-600" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[8px] sm:text-xs text-gray-500">
+            <span className="text-[8px] sm:text-xs ">
               price two week
             </span>
-            <span className="text-xs text-gray-800">{price_two_week}</span>
+            <span className="text-xs ">{price_two_week}</span>
           </div>
         </div>
 
@@ -75,10 +75,10 @@ const Course_column = ({
             <FaMoneyBillAlt className="text-blue-600" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[8px] sm:text-xs text-gray-500">
+            <span className="text-[8px] sm:text-xs ">
               price three week
             </span>
-            <span className="text-xs text-gray-800">{price_three_week}</span>
+            <span className="text-xs ">{price_three_week}</span>
           </div>
         </div>
       </div>

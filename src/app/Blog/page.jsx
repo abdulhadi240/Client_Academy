@@ -52,7 +52,7 @@ export default function Page() {
 
   return (
     <div className="px-4 py-8 mx-auto max-w-7xl">
-      <h1 className="mb-8 text-4xl font-bold text-center">Artificial Intelligence</h1>
+      <h1 className="mb-8 text-4xl font-bold text-center dark:text-white">Artificial Intelligence</h1>
       <p className="mb-8 text-center text-gray-500">Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper et pharetra sem.</p>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {articles.map((article, index) => (

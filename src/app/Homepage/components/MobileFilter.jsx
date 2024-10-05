@@ -3,7 +3,7 @@ import { AiOutlineSearch, AiOutlineCalendar } from 'react-icons/ai';
 
 export default function SearchForm() {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg">
+    <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-black">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Search bar */}
         <div className='flex gap-2'>
@@ -51,26 +51,26 @@ export default function SearchForm() {
         </div>
         <div className='grid grid-cols-2 gap-2'>
         {/* Subject dropdown */}
-        <select className="p-2 bg-gray-100 border ">
-          <option>Subject</option>
+        <select className="p-2 bg-gray-100 border dark:text-black">
+          <option className='dark:text-black '>Subject</option>
           {/* Add more options here */}
         </select>
 
         {/* Language dropdown */}
-        <select className="p-2 bg-gray-100 border ">
-          <option>Language</option>
+        <select className="p-2 bg-gray-100 border dark:text-black">
+          <option className='dark:text-black '>Language</option>
           {/* Add more options here */}
         </select>
 
         {/* Category dropdown */}
-        <select className="p-2 bg-gray-100 border ">
-          <option>Category</option>
+        <select className="p-2 bg-gray-100 border dark:text-black">
+          <option className='dark:text-black '>Category</option>
           {/* Add more options here */}
         </select>
 
         {/* Place dropdown */}
-        <select className="p-2 bg-gray-100 border ">
-          <option>Place</option>
+        <select className="p-2 bg-gray-100 border dark:text-black">
+          <option className='dark:text-black '>Place</option>
           {/* Add more options here */}
         </select>
         </div>

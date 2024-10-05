@@ -68,52 +68,52 @@ const WorkWithUsForm = () => {
 
   return (
     <div className="container sm:mx-auto sm:p-6">
-      <form onSubmit={handleSubmit} className="w-full bg-white sm:p-6 ">
+      <form onSubmit={handleSubmit} className="w-full bg-white dark:bg-black sm:p-6 ">
 
         <div className="w-full mb-4">
-          <label className="block text-gray-700" htmlFor="name">Name</label>
+          <label className="block text-gray-700 dark:text-white" htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 "
+            className="block w-full p-2 mt-1 border border-gray-300 dark:placeholder:text-black dark:text-black "
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="degree">The highest scientific degree</label>
+          <label className="block text-gray-700 dark:text-white" htmlFor="degree">The highest scientific degree</label>
           <input
             type="text"
             id="degree"
             value={degree}
             onChange={(e) => setDegree(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 "
+            className="block w-full p-2 mt-1 border border-gray-300 dark:text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="residence">Place of residence</label>
+          <label className="block text-gray-700 dark:text-white" htmlFor="residence">Place of residence</label>
           <input
             type="text"
             id="residence"
             value={residence}
             onChange={(e) => setResidence(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 "
+            className="block w-full p-2 mt-1 border border-gray-300 dark:text-black"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="specialization">Specialization</label>
+          <label className="block text-gray-700 dark:text-white" htmlFor="specialization">Specialization</label>
           <input
             type="text"
             id="specialization"
             value={specialization}
             onChange={(e) => setSpecialization(e.target.value)}
-            className="block w-full p-2 mt-1 border border-gray-300 "
+            className="block w-full p-2 mt-1 border border-gray-300 dark:text-black"
             required
           />
         </div>
@@ -188,9 +188,9 @@ const DynamicTabs = () => {
               <WorkWithUsForm /> // Render custom component for "Work With Us" tab
             ) : (
               <>
-                <h2 className="text-3xl font-bold text-gray-800">{activeContent.title}</h2>
-                <p className="text-gray-600">{activeContent.description}</p>
-                <a href="#" className="font-extralight text-xs text-[#152765]">Learn more</a>
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white">{activeContent.title}</h2>
+                <p className="text-gray-600 dark:text-white">{activeContent.description}</p>
+                <a href="#" className="font-extralight text-xs text-[#152765] dark:text-white">Learn more</a>
               </>
             )}
           </div>

@@ -31,7 +31,7 @@ const Page = () => {
             text={'info@batdacademy.org.uk'}
           />
         </div>
-        <div className='w-full sm:w-[450px] bg-white shadow-lg p-6 h-auto sm:h-[490px]'>
+        <div className='w-full sm:w-[450px] bg-white dark:text-black shadow-lg p-6 h-auto sm:h-[490px]'>
           <h1 className='mb-4 text-2xl font-bold'>CONTACT NOW</h1>
           <p className='mb-4 text-sm'>
             In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.

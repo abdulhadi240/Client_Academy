@@ -8,7 +8,7 @@ const Checkout = () => {
       <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
         {/* Payment Form */}
         <div className="w-full p-10 bg-white rounded-lg shadow-md lg:w-2/4">
-          <h2 className="text-xl font-semibold sm:text-center">Checkout</h2>
+          <h2 className="text-xl font-semibold sm:text-center dark:text-black">Checkout</h2>
           <p className="mb-6 text-gray-600 sm:text-center">Card Type</p>
 
           {/* Card Logos */}

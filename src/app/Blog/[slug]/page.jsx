@@ -63,14 +63,14 @@ const BlogPost = () => {
               height={50}
               className="rounded-full"
             />
-            <span className="ml-2 text-sm text-gray-600">
+            <span className="ml-2 text-sm text-gray-600 dark:text-white/70">
               {blogPost.author} - {blogPost.date}
             </span>
           </div>
         </div>
         <hr className="my-20" />
         <div className="mx-4 md:mx-10 lg:mx-20">
-          <p className="text-xs text-black/70">
+          <p className="text-xs text-black/70 dark:text-white">
             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
             montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
             pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
@@ -79,7 +79,7 @@ const BlogPost = () => {
           <h1 className="mt-10 text-lg font-semibold md:text-xl">
             How to choose the right app reseller program
           </h1>
-          <p className="mt-4 text-xs text-black/70">
+          <p className="mt-4 text-xs text-black/70 dark:text-white">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -102,7 +102,7 @@ const BlogPost = () => {
               handful
             </li>
           </ul>
-          <p className="mt-4 text-xs text-black/70">
+          <p className="mt-4 text-xs text-black/70 dark:text-white">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
@@ -112,7 +112,7 @@ const BlogPost = () => {
           <h1 className="mt-10 text-lg font-semibold md:text-xl">
             Why a productivity app can change your work performance
           </h1>
-          <p className="mt-4 text-xs text-black/70">
+          <p className="mt-4 text-xs text-black/70 dark:text-white">
             If you are going to use a passage of Lorem Ipsum, you need to be
             sure there isn't embarrassing hidden in the middle of the text. All
             the Lorem Ipsum generators on the Internet tend to repeat predefined
@@ -128,14 +128,14 @@ const BlogPost = () => {
               className="w-full h-auto rounded-3xl"
             />
           </div>
-          <h1 className="flex justify-center -mt-4 text-xs text-center text-primary">
+          <h1 className="flex justify-center -mt-4 text-xs text-center dark:text-white/70 text-primary">
             Making this the first true generator on the Internet.
           </h1>
 
           <h1 className="mt-10 text-lg font-semibold md:text-xl">
             Why a productivity app can change your work performance
           </h1>
-          <p className="mt-4 text-xs text-black/70">
+          <p className="mt-4 text-xs text-black/70 dark:text-white">
             If you are going to use a passage of Lorem Ipsum, you need to be
             sure there isn't embarrassing hidden in the middle of text. All the
             Lorem Ipsum generators on the Internet tend to repeat predefined
@@ -143,7 +143,7 @@ const BlogPost = () => {
             Internet.
           </p>
 
-          <ul className="pl-5 text-xs list-disc text-black/70">
+          <ul className="pl-5 text-xs list-disc text-black/70 dark:text-white">
             <li className="mt-4">
               There are many variations of passages of Lorem Ipsum available.
             </li>
@@ -165,7 +165,7 @@ const BlogPost = () => {
               <div className="flex items-center justify-center w-full p-4 md:w-1/4 bg-primary rounded-t-3xl md:rounded-t-none md:rounded-l-3xl">
                 <BiSolidQuoteLeft size={50} color="white" />
               </div>
-              <div className="w-full md:w-3/4 bg-[#F9F9F9] items-center flex justify-center text-center p-6 text-xs rounded-b-3xl md:rounded-b-none md:rounded-r-3xl">
+              <div className="w-full md:w-3/4 bg-[#F9F9F9] dark:text-black items-center flex justify-center text-center p-6 text-xs rounded-b-3xl md:rounded-b-none md:rounded-r-3xl">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
@@ -177,7 +177,7 @@ const BlogPost = () => {
           <h1 className="mt-10 text-lg font-semibold md:text-xl">
             What is your favorite productivity SaaS?
           </h1>
-          <p className="mt-4 text-xs text-black/70">
+          <p className="mt-4 text-xs text-black/70 dark:text-white">
             If you are going to use a passage of Lorem Ipsum, you need to be
             sure there isn't embarrassing hidden in the middle of the text. All
             the Lorem Ipsum generators on the Internet tend to repeat predefined
