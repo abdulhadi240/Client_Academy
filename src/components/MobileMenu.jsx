@@ -13,9 +13,13 @@ export default function MobileMenu() {
 
   return (
     <div>
-      <div className="flex justify-between pt-4">
+      <div className="pt-4 mx-4">
         {/* Menu Button */}
-        <div className="flex gap-2 mx-2">
+        <div className="flex justify-between mx-2">
+          
+          <div>
+            <Image src={"/logobat.png"} width={70} height={70} alt="logo" />
+          </div>
           <button
             aria-label="Open menu"
             className="flex items-center justify-center w-auto h-auto text-black rounded-md dark:text-white"
@@ -37,30 +41,13 @@ export default function MobileMenu() {
               />
             </svg>
           </button>
-          <div>
-            <Image src={"/logobat.png"} width={70} height={70} alt="logo" />
-          </div>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Link href="/special-request" className="text-xs hover:underline">
-            Special Request
-          </Link>
-          <Link href="/blog" className="text-xs hover:underline">
-            Blog
-          </Link>
-          <Link href="/faq" className="text-xs hover:underline">
-            FAQ
-          </Link>
-          <div className="px-4 py-1 text-xs bg-[#111F51] text-white rounded">
-            <span>العربية</span>
-          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-64 bg-white shadow-md h-full z-50 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 right-0 w-64 bg-white shadow-md h-full z-50 transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         <div className="">
