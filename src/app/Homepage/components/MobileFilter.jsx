@@ -7,8 +7,10 @@ export default function SearchForm() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Search bar */}
         <div className='flex gap-2'>
-        <div className="flex items-center w-full bg-gray-100 border rounded-xl ">
-        <AiOutlineSearch size={25} />
+        <div className="flex items-center w-full bg-gray-100 border rounded-md dark:text-black ">
+          <div className='dark:text-black'>
+        <AiOutlineSearch size={25}/>
+        </div>
 
           <input
             type="text"
@@ -17,8 +19,7 @@ export default function SearchForm() {
           />
           
         </div>          
-          <button className="flex items-center justify-between gap-4 py-1 px-2 text-white bg-[#152765] rounded-xl ">
-            <AiOutlineSearch size={20} />
+          <button className="flex items-center justify-between gap-4 py-1 px-2 text-white bg-[#152765] rounded-md ">
             <div>Search</div>
 
           </button>
@@ -26,28 +27,42 @@ export default function SearchForm() {
 
         {/* Year field */}
         <div className='flex gap-2 '>
-        <div className="flex items-center bg-gray-100 space-x-2 border-[1px]">
-          <input
-            type="number"
-            placeholder="Year"
-            className="w-full p-2 bg-gray-100 rounded-md placeholder:text-black"
-          />
-          <button className="p-2 rounded-md">
-            <AiOutlineCalendar size={20} />
-          </button>
-        </div>
+        {/* Year Field */}
+<div className="flex items-center w-full bg-gray-100 space-x-2 border-[1px]">
+  <input
+    type="number"
+    placeholder="Year"
+    className="w-full p-2 bg-gray-100 rounded-md dark:text-black placeholder:text-black"
+    min="1900"
+    max="2100"
+  />
+  <button className="p-2 rounded-md dark:text-black">
+    <AiOutlineCalendar size={20} />
+  </button>
+</div>
 
-        {/* Month field */}
-        <div className="flex items-center bg-gray-100 space-x-2 border-[1px]">
-          <input
-            type="text"
-            placeholder="Month"
-            className="w-full p-2 bg-gray-100 border-0 rounded-md placeholder:text-black"
-          />
-          <button className="p-2 rounded-md">
-            <AiOutlineCalendar size={20} />
-          </button>
-        </div>
+{/* Month Field */}
+<div className="flex items-center w-full bg-gray-100 space-x-2 border-[1px]">
+  <select
+    className="w-full p-2 bg-gray-100 rounded-md placeholder:text-black dark:text-black"
+  >
+    <option value="" disabled selected>Month</option>
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <option value="5">May</option>
+    <option value="6">June</option>
+    <option value="7">July</option>
+    <option value="8">August</option>
+    <option value="9">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+  </select>
+ 
+</div>
+
         </div>
         <div className='grid grid-cols-2 gap-2'>
         {/* Subject dropdown */}

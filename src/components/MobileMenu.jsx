@@ -18,7 +18,7 @@ export default function MobileMenu() {
         <div className="flex gap-2 mx-2">
           <button
             aria-label="Open menu"
-            className="flex items-center justify-center w-auto h-auto text-black rounded-md"
+            className="flex items-center justify-center w-auto h-auto text-black rounded-md dark:text-white"
             onClick={toggleMenu}
           >
             {/* Hamburger Icon */}

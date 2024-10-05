@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Checkout = () => {
   return (
-    <div className="container p-6 mx-auto sm:p-10">
+    <div className="container p-3 mx-auto sm:p-10">
       {/* Checkout Layout */}
       <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
         {/* Payment Form */}
@@ -70,25 +70,25 @@ const Checkout = () => {
         </div>
 
         {/* Order Summary */}
-        <div className="w-full lg:w-1/3 h-96 bg-[#F0F5FC] p-6 rounded-lg shadow-md">
-          <h2 className="mb-4 text-xl font-semibold">Summary</h2>
+        <div className="w-full lg:w-1/3 h-96 bg-[#F0F5FC] p-3 rounded-lg shadow-md">
+          <h2 className="mb-4 text-xl font-semibold dark:text-black">Summary</h2>
           <div className="space-y-4">
             {/* Summary Items */}
             <div className="flex items-center justify-between">
               <Image src="/item.webp" width={60} height={60} alt="Item Image" className='rounded-lg' />
               <div className="text-sm">
-                <p className="font-semibold">Adipiscing elit</p>
+                <p className="font-semibold dark:text-black">Adipiscing elit</p>
                 <p className="text-gray-500">Lorem ipsum dolor sit amet...</p>
               </div>
-              <p className="font-bold">$24.69</p>
+              <p className="font-bold dark:text-black">$24.69</p>
             </div>
             <div className="flex items-center justify-between">
               <Image src="/item.webp" width={60} height={60} alt="Item Image" className='rounded-lg' />
               <div className="text-sm">
-                <p className="font-semibold">Adipiscing elit</p>
+                <p className="font-semibold dark:text-black">Adipiscing elit</p>
                 <p className="text-gray-500">Lorem ipsum dolor sit amet...</p>
               </div>
-              <p className="font-bold">$24.69</p>
+              <p className="font-bold dark:text-black">$24.69</p>
             </div>
 
             {/* Price Details */}
