@@ -11,7 +11,7 @@ const Page = () => {
           {" "}
           {/* Set height and make container relative */}
           <Image
-            src="/plan.png"
+            src="/plan.webp"
             alt="banner"
             layout="fill" // Fill the entire container
             objectFit="cover" // Maintain aspect ratio without stretching
@@ -31,7 +31,7 @@ const Page = () => {
       </div>
       <div className="hidden sm:block">
         <Features
-          image={"/plan1.png"}
+          image={"/plan1.webp"}
           icon={"/icon1.png"}
           heading={"Management"}
           number={"01"}

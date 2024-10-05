@@ -117,21 +117,21 @@ const Page = () => {
           <div className="grid grid-cols-2 gap-4 mt-10 overflow-hidden sm:grid-cols-3">
             {[
               {
-                image: '/4.png',
+                image: '/4.webp',
                 name: 'Nattasha Julie',
                 designation: 'Design, Australia',
                 number: '+1 (378) 400-1234',
                 email: 'julie@email.com'
               },
               {
-                image: '/Photo.png',
+                image: '/Photo.webp',
                 name: 'John Doe',
                 designation: 'Developer, USA',
                 number: '+1 (555) 123-4567',
                 email: 'john@email.com'
               },
               {
-                image: '/2.png',
+                image: '/2.webp',
                 name: 'Jane Smith',
                 designation: 'Marketing, UK',
                 number: '+44 (20) 7000-1234',

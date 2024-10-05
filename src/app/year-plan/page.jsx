@@ -63,7 +63,7 @@ const page = () => {
         <div className="relative h-32 banner sm:h-64">
           {/* Set height and make container relative */}
           <Image
-            src="/plan.png"
+            src="/plan.webp"
             alt="banner"
             layout="fill" // Fill the entire container
             objectFit="cover" // Maintain aspect ratio without stretching
