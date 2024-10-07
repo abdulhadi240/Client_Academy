@@ -1,5 +1,6 @@
 import React from "react";
 import Features_detail from "./components/Features_detail";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -10,11 +11,11 @@ const page = () => {
             The Most Prominent Courses That We Offer In Our Academy Share With
             Us To Get Better
           </h1>
-          <div className="flex justify-center">
-            <button className="py-2  px-7 shadow-2xl text-sm font-light rounded-md brightness-125 bg-[#111F51] text-white">
+          <Link href='/plan'><div className="flex justify-center">
+            <div className="py-2  px-7 shadow-2xl text-sm font-light rounded-md brightness-125 bg-[#111F51] text-white">
               Show Plan
-            </button>
-          </div>
+            </div>
+          </div></Link>
         </div>
       </div>
       <Features_detail
