@@ -1,4 +1,3 @@
-import { Link } from "next-view-transitions";
 import Image from "next/image";
 import React from "react";
 import Course_card from "./Course_card";
@@ -10,11 +9,12 @@ const Features_detail = ({ image, number, heading, text }) => {
         {/* Left side with Image */}
         <div className="relative w-full max-w-sm mx-auto">
       <div className="overflow-hidden rounded-bl-[250px] rounded-tr-[50px]">
-        <img
-          src="/000.png" // Replace with the actual image path
+        <Image
+          src="/000.webp" // Replace with the actual image path
           alt="Team Collaboration"
           width={400}
           height={400}
+          priority
           className=""
         />
       </div>
