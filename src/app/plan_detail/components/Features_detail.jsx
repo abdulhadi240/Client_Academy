@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Course_card from "./Course_card";
+import Link from "next/link";
 
 const Features_detail = ({ image, number, heading, text }) => {
   return (
