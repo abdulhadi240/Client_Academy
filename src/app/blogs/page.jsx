@@ -28,6 +28,7 @@ const page = () => {
             width={500}
             height={500}
             className="rounded-2xl"
+            priority
           />
         </div>
       </div>
