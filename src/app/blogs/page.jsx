@@ -29,6 +29,7 @@ const page = () => {
             height={500}
             className="rounded-2xl"
             priority
+            alt='image-hero'
           />
         </div>
       </div>
