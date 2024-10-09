@@ -111,3 +111,20 @@ body {
 .flip-card-back p {
   margin: 5px 0;
 }
+
+
+/* Content.css */
+
+.active {
+  background-color: red;
+}
+
+.dropdown-content {
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.dropdown-content.max-h-96 {
+  max-height: 400px;
+}
