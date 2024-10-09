@@ -72,7 +72,7 @@ const Content = ({ children }) => {
   return (
     <div className='flex justify-center sm:justify-between border-[1px]'>
       <div className="hidden p-4 sm:block">
-        <div className="w-64 h-auto p-3 shadow-xl">
+        <div className="w-64 h-auto p-3 shadow-md">
           <h1 className="mb-4 text-sm">All Category</h1>
           {sidemenu.map((item, index) => {
             return (
