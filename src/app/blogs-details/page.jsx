@@ -94,7 +94,7 @@ const page = () => {
             <div className='hidden sm:block'>
             <DesktopCarasoul/>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center sm:hidden'>
                 <Carasoul/>
             </div>
           </Content>
