@@ -95,7 +95,7 @@ const page = () => {
           <div className="relative flex items-center justify-center h-32 banner sm:h-64">
             {/* Set height and make container relative */}
             <Image
-              src="/consulting.jfif"
+              src="/consulting.webp"
               alt="banner"
               fill // replaces layout="fill"
               priority
