@@ -7,8 +7,8 @@ const JobCard = ({ job }) => {
       <div className={`p-6 transition-shadow rounded-md shadow-md ${job.type === 'Full-Time' ? "bg-gradient-to-r from-yellow-50" : "bg-white"}  hover:shadow-lg`}>
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-semibold md:text-xl">{job.title}</h3>
-          <span className={`px-2 py-1 rounded-md text-sm ${
-            job.type === "Full-Time" ? "bg-green-100 w-24 text-green-600" : "bg-yellow-100 w-24 text-yellow-600"
+          <span className={`text-center py-1 rounded-md  text-xs md:text-sm ${
+            job.type === "Full-Time" ? "bg-green-100 w-20 text-green-600" : "bg-yellow-100 w-24 text-yellow-600"
           }`}>
             {job.type}
           </span>
