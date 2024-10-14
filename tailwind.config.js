@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, { extract , screens , fontSize } from 'fluid-tailwind'
+
 module.exports = {
   darkMode: 'media',
-  content: [
+  content: {
+    files: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",],
+    extract
+  },
   theme: {
     extend: {
       colors: {
@@ -19,6 +23,10 @@ module.exports = {
         },
       },
     },
+    screens,
+    fontSize,
   },
-  plugins: [],
+  plugins: [
+    fluid
+  ]
 };

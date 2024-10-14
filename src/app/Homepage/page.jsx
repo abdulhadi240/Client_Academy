@@ -18,16 +18,7 @@ const Team = dynamic(() => import('./components/Team'));
 // const CustomerCarasoul = dynamic(() => import('./components/CustomerCarasoul'), { ssr: false });
 
 // Metadata for the page
-export const metadata = {
-  title: 'British Academy - Courses, Training & Career Opportunities',
-  description:
-    'Explore a variety of prominent courses offered by the British Academy to enhance your skills and career. Join now for better opportunities.',
-  keywords: 'British Academy, courses, training, career, personal development, online courses',
-  viewport: 'width=device-width, initial-scale=1',
-  icons: {
-    icon: '/favicon.ico',
-  },
-};
+
 
 const Page = () => {
   return (
@@ -35,7 +26,7 @@ const Page = () => {
       {/* Hero Section */}
       <div className="container p-6 overflow-hidden sm:py-16 sm:px-24 bg-[#DEEEFD] sm:flex sm:flex-col-reverse sm:items-center sm:justify-between mx-auto lg:flex-row">
         <div className="w-full space-y-6 text-center lg:w-1/2 lg:text-left">
-          <h1 className="text-sm font-bold leading-tight text-gray-800 md:text-4xl sm:text-3xl">
+          <h1 className="~text-sm/4xl font-bold leading-tight text-gray-800 ">
             The Most Prominent Courses That{' '}
             <span className="">We Offer</span> In Our Academy Share With Us To Get
             Better
