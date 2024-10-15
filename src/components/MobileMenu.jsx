@@ -22,7 +22,7 @@ export default function MobileMenu() {
           </div>
           <button
             aria-label="Open menu"
-            className="flex items-center justify-center w-auto h-auto text-black rounded-md dark:text-white"
+            className="flex items-center justify-center w-auto h-auto text-white rounded-md dark:text-white"
             onClick={toggleMenu}
           >
             {/* Hamburger Icon */}
@@ -95,7 +95,7 @@ export default function MobileMenu() {
                 </Link>
                 <Link
                   href="/login"
-                  className="flex items-center w-full h-8 px-4 mt-4 text-xs text-white bg-[#111F51] rounded "
+                  className="flex items-center w-full h-8 px-4 mt-4 text-xs text-white rounded bg-primary "
                   onClick={toggleMenu}
                 >
                   <FaLock className="mr-2 " /> Signup
