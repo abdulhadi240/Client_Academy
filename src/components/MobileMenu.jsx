@@ -13,7 +13,7 @@ export default function MobileMenu() {
 
   return (
     <div>
-      <div className="pt-4 mx-4">
+      <div className="pt-4 mx-4 md:hidden">
         {/* Menu Button */}
         <div className="flex justify-between mx-2">
           
@@ -22,7 +22,7 @@ export default function MobileMenu() {
           </div>
           <button
             aria-label="Open menu"
-            className="flex items-center justify-center w-auto h-auto text-white rounded-md dark:text-white"
+            className="flex items-center justify-center w-auto h-auto text-black rounded-md dark:text-white"
             onClick={toggleMenu}
           >
             {/* Hamburger Icon */}
