@@ -24,16 +24,16 @@ const page = () => {
         </div>
         <div className='flex justify-center'>
         <div className='grid grid-cols-1 gap-10 sm:grid-cols-2'>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
-            <Card image={'/city.jfif'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
+            <Card image={'/city.webp'} title={'Tv Montage & Editing Skills'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor'} country={'Egypt'}/>
 
         </div>
         </div>
